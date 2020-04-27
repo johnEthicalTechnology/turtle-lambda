@@ -6,8 +6,8 @@ function sleep(millis) {
 
 module.exports = async (req, res) => {
 
-  await sleep(1000);
+  await sleep(500);
 
-  res.send('Waited 1 second');
+  res.json({body: 'Waited 0.5 second});
 
 }
