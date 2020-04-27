@@ -2,6 +2,7 @@ function sleep(millis) {
   return new Promise(resolve => setTimeout(resolve, millis));
 }
 
-module.exports = (req, res) => {
-  sleep(1000);
+module.exports = async (req, res) => {
+  await sleep(1000);
+  res.send('Waited 1 second');
 }
