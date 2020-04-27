@@ -8,6 +8,6 @@ module.exports = async (req, res) => {
 
   await sleep(500);
 
-  res.json({body: 'Waited 0.5 second});
+  res.json({body: 'Waited 0.5 second'});
 
 }
